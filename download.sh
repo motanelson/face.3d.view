@@ -1,5 +1,6 @@
 #!/usr/bin/sh 
 printf "\033c\033[43;30m\ndownloa gcc"
-wget "http://www.netgull.com/gcc/old-releases/gcc-1/g%2B%2B-1.22.0.tar.bz2" 
-bzip2 -d 'g++-1.22.0.tar.bz2'
-tar --extract -f 'g++-1.22.0.tar'
+wget "http://www.netgull.com/gcc/releases/gcc-4.0.0/gcc-4.0.0.tar.gz" 
+gzip -d 'gcc-4.0.0.tar.gz'
+tar --extract -f 'gcc-4.0.0.tar'
+cd gcc-4.0.0
