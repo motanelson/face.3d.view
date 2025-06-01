@@ -76,8 +76,8 @@ def main():
                 running = False
 
         # Rotação automática a cada 1.5 segundos
-        if time.time() - tempo_ultima_rotacao > 1.5:
-            angulo += 45
+        if time.time() - tempo_ultima_rotacao > 0.1:
+            angulo += 1
             tempo_ultima_rotacao = time.time()
 
         glPushMatrix()
